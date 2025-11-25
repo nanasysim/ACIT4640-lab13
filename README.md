@@ -10,7 +10,7 @@ The state file is created in the S3 bucket the first time I run `terraform apply
 
 ### When is the lock file present?
 
-The lock file is present only while a Terraform command that modifies or refreshes state is running (for example `terraform apply`, `terraform destroy`, or some `terraform plan` operations). It appears in the bucket to prevent concurrent changes and is removed when the command finishes.
+The lock file is present only while a Terraform command that modifies or refreshes state is running (for example `terraform apply`, `terraform destroy` operations). It appears in the bucket to prevent concurrent changes and is removed when the command finishes.
 
 ### Is the lock file always in the bucket after it is created?
 
