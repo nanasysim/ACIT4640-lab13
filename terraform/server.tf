@@ -21,3 +21,12 @@ resource "aws_instance" "web" {
   }
 }
 
+terraform {
+  backend "s3" {
+    bucket       = "nana-terraform-backend-bucket"
+    key          = "terraform.tfstate"
+    region       = "us-west-2"
+    encrypt      = true
+    use_lockfile = true
+  }
+}
