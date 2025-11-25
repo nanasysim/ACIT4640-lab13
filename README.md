@@ -1,7 +1,5 @@
 # terraform-s3-backend-lab
 
-See lab instructions on D2L.
-
 ## Questions
 
 ### When is the state file created?
